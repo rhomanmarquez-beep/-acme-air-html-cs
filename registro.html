@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME AIR - Registro</title>
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+     
+</head>
+<body>
+
+    <div class="card-container">
+      
+        <header class="header">
+            <div class="logo-container">
+                <span class="plane-icon"></span>
+                <div class="logo-text">
+                    <h1>ACME AIR</h1>
+                    <p>Flying to your dreams</p>
+                </div>
+            </div>
+        </header>
+
+        
+        <main class="main-content">
+            <h2 class="title">Registro</h2>
+            <hr class="divider">
+
+           
+            <form action="crear-contrasena.html" method="GET" class="register-form">
+                
+                <div id="nombreCompleto" class="input-group">
+                    <input type="text" placeholder="Nombre Completo" required>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" placeholder="No. Identificación" required>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" placeholder="E-mail" required>
+                </div>
+
+                <div class="input-group">
+                    <input type="tel" placeholder="Teléfono" required>
+                </div>
+
+                <div class="input-group">
+                    <select required>
+                        <option value="" disabled selected hidden>Ciudad</option>
+                        <option value="bogota">Bogotá</option>
+                        <option value="medellin">Medellín</option>
+                        <option value="cali">Cali</option>
+                        <option value="bucaramanga">Bucaramanga</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-guardar">GUARDAR</button>
+
+            </form>
+        </main>
+    </div>
+
+</body>
+</html>
