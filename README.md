@@ -96,7 +96,7 @@ El proyecto sigue una arquitectura modular separando las vistas semánticas en H
 
 ##  Capturas de las Vistas
 
-> **Nota:** Reemplaza la ruta `img/capturas/...` por la ubicación correspondiente de tus imágenes en el proyecto.
+
 
 ### 1. Módulo de Autenticación y Registro
 
