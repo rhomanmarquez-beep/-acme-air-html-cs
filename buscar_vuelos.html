@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME AIR - Búsqueda de Vuelos</title>
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="card-container">
+       
+        <header class="header">
+            <div class="logo-container">
+                <span class="img-icon"></span>
+                <div class="logo-text">
+                    <h1>ACME AIR</h1>
+                    <p>Flying to your dreams</p>
+                </div>
+            </div>
+        </header>
+
+      
+        <main class="contenedor">
+            
+        
+            <div class="user-profile">
+                <div class="avatar">
+                    <span class="avatar-icon"></span>
+                </div>
+                <div class="user-info">
+                    <h3 class="user-name">!Hola Usuario¡</h3>
+                    <a href="login.html" class="logout-link">Cerrar Sesión</a>
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <h2 class="title">Búsqueda de Vuelos</h2>
+
+           
+            <form action="vuelos.html" method="GET" class="search-form">
+                
+              
+                <div class="checkbox-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="soloIda">
+                        <span class="checkmark"></span>
+                        <span class="checkbox-label">Solo ida</span>
+                    </label>
+                </div>
+
+       
+                <div class="input-group">
+                    <input type="text" placeholder="Origen" required>
+                </div>
+
+              
+                <div class="input-group">
+                    <input type="text" placeholder="Destino" required>
+                </div>
+
+           
+                <div class="input-group">
+                    <input type="text" placeholder="Fecha de salida" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+                </div>
+
+             
+                <div class="input-group">
+                    <input type="text" placeholder="Fecha de regreso" id="fechaRegreso" onfocus="(this.type='date')" onblur="(this.type='text')">
+                </div>
+
+
+                <button type="submit" class="btn-buscar">BUSCAR</button>
+
+            </form>
+        </main>
+    </div>
+
+</body>
+</html>
