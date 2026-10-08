@@ -150,6 +150,19 @@ a:focus-visible {
     font-weight: bold;
 }
 
+/*arreglo de la img */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    width: 60px;          
+    height: auto;         
+    object-fit: contain;  
+    border-radius: 8px;   
+}
 /*estilos de buscar vuelos */
 
 .avatar {
