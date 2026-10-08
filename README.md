@@ -137,4 +137,4 @@ El proyecto sigue una arquitectura modular separando las vistas semánticas en H
   * `Variables CSS (`:root`)`: Definición centralizada de colores primarios (`#d13cff`, `#00b0ff`, `#0077e6`), bordes y border-radius.
   * `Flexbox`: Alineación y distribución responsiva de elementos en tarjetas y formularios.
   * `Media Queries`: Adaptación fluida para pantallas móviles (320px+), tablets (768px+) y monitores (1024px+).
-* **Tipografía:** Google Fonts - [Poppins](https://fonts.google.com/specimen/Poppins) (Pesos: 400, 500, 600).
+
