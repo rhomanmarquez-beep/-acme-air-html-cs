@@ -1,0 +1,459 @@
+/* ACME AIR - estilos base (compartido) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --color-inicio: #d13cff;
+  --color-fin: #00b0ff;
+  --color-boton: #0077e6;
+  --color-boton-hover: #0062bf;
+  --color-texto: #1f1633;
+  --color-suave: #6b6280;
+  --color-borde: #d9d3e6;
+  --color-tarjeta: #ffffff;
+  --radio: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Poppins", "Open Sans", Arial, sans-serif;
+  color: var(--color-texto);
+  line-height: 1.5;
+  min-height: 100vh;
+  background: linear-gradient(160deg, var(--color-inicio) 0%, var(--color-fin) 100%);
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a {
+  color: var(--color-boton);
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--color-boton-hover);
+}
+
+a:focus-visible {
+  outline: 3px solid var(--color-inicio);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Botón principal */
+.btn-primario {
+  display: block;
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: none;
+  border-radius: var(--radio);
+  background: var(--color-boton);
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0, 119, 230, 0.4);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.btn-primario:hover {
+  background: var(--color-boton-hover);
+  transform: scale(1.02);
+}
+
+.btn-primario:focus-visible {
+  outline: 3px solid var(--color-inicio);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-primario {
+    transition: none;
+  }
+  .btn-primario:hover {
+    transform: none;
+  }
+}
+
+
+/* estilos de menu */
+
+.header {
+    background: linear-gradient(135deg, #cf4bb2, #5a7be0);
+    color: #ffffff;
+}
+
+.logo-text h1 {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo-text p {
+    font-size: 11px;
+    opacity: 0.9;
+}
+
+.welcome-title {
+    font-size: 22px;
+    color: #222222;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #333333;
+}
+
+.logout-link {
+    color: #666666;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.logout-link:hover {
+    color: #333333;
+}
+
+.menu-card {
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #444444;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-icon {
+    font-size: 26px;
+}
+
+.card-text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.arrow {
+    font-size: 18px;
+    color: #666666;
+    font-weight: bold;
+}
+
+/*estilos de buscar vuelos */
+
+.avatar {
+    background-color: #f5f0ff;
+}
+
+.avatar-icon {
+    font-size: 26px;
+    color: #8e24aa;
+}
+
+.user-name {
+    font-size: 22px;
+    color: #222222;
+    font-weight: normal;
+}
+
+.logout-link {
+    color: #666666;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.logout-link:hover {
+    color: #333333;
+}
+
+.title {
+    font-size: 20px;
+    color: #333333;
+    font-weight: normal;
+}
+
+.checkbox-container {
+    cursor: pointer;
+    font-size: 16px;
+    color: #444444;
+}
+
+.checkbox-container input[type="checkbox"] {
+    cursor: pointer;
+    accent-color: #555555;
+}
+
+.input-group input {
+    font-size: 15px;
+    color: #333333;
+    outline: none;
+    background-color: #ffffff;
+    transition: border-color 0.2s;
+}
+
+.input-group input::placeholder {
+    color: #666666;
+}
+
+.input-group input:focus {
+    border-color: #2196f3;
+}
+
+.btn-buscar {
+    background-color: #2196f3;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-buscar:hover {
+    background-color: #1976d2;
+}
+/*registro*/
+
+.title {
+    font-size: 24px;
+    color: #222222;
+    font-weight: normal;
+}
+
+.input-group input,
+.input-group select {
+    font-size: 15px;
+    color: #333333;
+    outline: none;
+    background-color: #ffffff;
+    transition: border-color 0.2s;
+}
+
+.input-group input::placeholder {
+    color: #666666;
+}
+
+.input-group select {
+    color: #666666;
+    appearance: none;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 10px auto;
+    cursor: pointer;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #1e88e5;
+}
+
+.btn-guardar {
+    background-color: #2196f3;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-guardar:hover {
+    background-color: #1976d2;
+}
+/*checkin*/
+
+.user-name {
+    font-size: 22px;
+    color: #222222;
+    font-weight: normal;
+}
+
+.logout-link {
+    color: #666666;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.logout-link:hover {
+    color: #333333;
+}
+
+.title {
+    font-size: 22px;
+    color: #222222;
+    font-weight: normal;
+}
+
+.flight-summary-card {
+    background-color: #ffffff;
+}
+
+.flight-icon {
+    font-size: 28px;
+    color: #5c6bc0;
+}
+
+.flight-time {
+    font-size: 14px;
+    color: #666666;
+    font-weight: 500;
+}
+
+.flight-duration {
+    font-size: 13px;
+    color: #888888;
+}
+
+.flight-route {
+    font-size: 13px;
+    color: #777777;
+}
+
+.flight-code {
+    font-size: 20px;
+    font-weight: bold;
+    color: #777777;
+}
+
+.emergency-container {
+    background-color: #ffffff;
+}
+
+.emergency-title {
+    font-size: 16px;
+    color: #777777;
+    font-weight: bold;
+}
+
+.input-group input {
+    font-size: 15px;
+    color: #333333;
+    outline: none;
+    background-color: #ffffff;
+    transition: border-color 0.2s;
+}
+
+.input-group input::placeholder {
+    color: #666666;
+}
+
+.input-group input:focus {
+    border-color: #2196f3;
+}
+
+.btn-guardar {
+    background-color: #2196f3;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-guardar:hover {
+    background-color: #1976d2;
+}
+/*vuelos*/
+
+.route-cities,
+.route-date {
+    font-size: 16px;
+    color: #555555;
+}
+
+.flight-card {
+    background-color: #ffffff;
+}
+
+.flight-icon {
+    font-size: 28px;
+    color: #5c6bc0;
+}
+
+.flight-time {
+    font-size: 14px;
+    color: #666666;
+    font-weight: 500;
+}
+
+.flight-duration,
+.flight-code {
+    font-size: 13px;
+    color: #777777;
+}
+
+.flight-price {
+    font-size: 14px;
+    color: #666666;
+}
+
+.flight-price strong {
+    font-size: 18px;
+    color: #444444;
+}
+
+.btn-volver {
+    background-color: #2196f3;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-volver:hover {
+    background-color: #1976d2;
+}
+/*mis vuelos*/
+
+.flight-duration,
+.flight-code,
+.flight-route {
+    font-size: 13px;
+    color: #888888;
+}
+
+.flight-route {
+    font-size: 12px;
+}
+
+.flight-date {
+    font-size: 13px;
+    color: #666666;
+    font-weight: bold;
+}
+
+.flight-status {
+    font-size: 16px;
+    font-weight: bold;
+    color: #777777;
+    letter-spacing: 0.5px;
+}
+
+.btn-volver {
+    background-color: #2196f3;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-volver:hover {
+    background-color: #1976d2;
+}

@@ -1,0 +1,332 @@
+/* ACME AIR - estructura (compartido) */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 460px;
+  padding: 2rem 1.5rem;
+  background: var(--color-tarjeta);
+  border-radius: 20px;
+  box-shadow: 0 16px 40px rgba(31, 22, 51, 0.25);
+}
+
+.contenedor header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.contenedor header img {
+  display: block;
+  max-width: 140px;
+  height: auto;
+}
+
+.enlaces {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* layout de menu */
+
+.header {
+    padding: 25px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.plane-icon {
+    transform: rotate(-10deg);
+}
+
+.main-content {
+    padding: 25px 20px 35px 20px;
+    text-align: center;
+}
+
+.welcome-title {
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    margin-bottom: 12px;
+}
+
+.logout-link {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.menu-card {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+}
+
+.card-icon {
+    margin-right: 15px;
+}
+
+.card-text {
+    flex-grow: 1;
+    text-align: left;
+}
+
+/*buscar vuelos */
+
+.img-icon {
+    font-size: 32px;
+    transform: rotate(-10deg);
+}
+
+.contenedor {
+    padding: 20px 25px 30px 25px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-group input {
+    padding: 14px 16px;
+}
+
+.btn-buscar {
+    padding: 14px;
+    margin-top: 10px;
+}
+/*registro*/
+
+.title {
+    margin-bottom: 15px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input-group input,
+.input-group select {
+    padding: 14px 16px;
+}
+
+.btn-guardar {
+    padding: 14px;
+    margin-top: 10px;
+}
+
+/*checkin*/
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.flight-summary-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 15px;
+    margin-bottom: 20px;
+}
+
+.flight-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 4px;
+}
+
+.flight-code-box {
+    display: flex;
+    align-items: center;
+}
+
+.emergency-container {
+    padding: 20px 15px;
+}
+
+.emergency-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.checkin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input-group input {
+    padding: 14px 16px;
+}
+
+.btn-guardar {
+    padding: 14px;
+    margin-top: 10px;
+}
+
+/*vuelos*/
+
+.route-info {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.route-cities {
+    margin-bottom: 4px;
+}
+
+.flight-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.flight-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 15px;
+}
+
+.flight-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 6px;
+}
+
+.flight-price-info {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 6px;
+}
+
+.btn-volver {
+    display: block;
+    padding: 14px;
+    text-align: center;
+}
+/*mis vuelos*/
+
+.flight-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 25px;
+}
+
+.flight-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 15px;
+}
+
+.flight-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 4px;
+}
+
+.flight-status-info {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 4px;
+}
+
+.btn-volver {
+    display: block;
+    padding: 14px;
+    text-align: center;
+}

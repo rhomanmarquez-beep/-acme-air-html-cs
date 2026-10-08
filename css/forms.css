@@ -1,0 +1,206 @@
+/* ACME AIR - formularios (compartido) */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.formulario label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="password"],
+.formulario input[type="tel"],
+.formulario input[type="date"] {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  margin-bottom: 0.8rem;
+  border: 1.5px solid var(--color-borde);
+  border-radius: var(--radio);
+  background: #ffffff;
+  color: var(--color-texto);
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.formulario input:focus {
+  outline: 3px solid var(--color-inicio);
+  outline-offset: 1px;
+  border-color: var(--color-inicio);
+}
+
+/* Checkbox "Recordar mis datos" */
+.recordar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.recordar input[type="checkbox"] {
+  width: 1.15rem;
+  height: 1.15rem;
+  accent-color: var(--color-boton);
+}
+
+.recordar label {
+  font-weight: 400;
+  color: var(--color-suave);
+}
+
+.formulario .btn-primario {
+  margin-top: 0.4rem;
+}
+
+/*forms de menu */
+.card-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e0e0e0;
+}
+
+.menu-card {
+    border: 1px solid #dcdcdc;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
+}
+
+.menu-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*buscar vuelos */
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #b388ff;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.input-group input {
+    border: 1px solid #b0b0b0;
+    border-radius: 6px;
+}
+
+.btn-buscar {
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(33, 150, 243, 0.3);
+}
+
+.btn-buscar:active {
+    transform: scale(0.99);
+}
+
+/*registro*/
+
+.divider {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin-bottom: 25px;
+}
+
+.input-group input,
+.input-group select {
+    border: 1px solid #b0b0b0;
+    border-radius: 6px;
+}
+
+.btn-guardar {
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(33, 150, 243, 0.3);
+}
+
+.btn-guardar:active {
+    transform: scale(0.99);
+}
+
+/*checkin*/
+
+.divider {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+}
+
+.flight-summary-card {
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+.emergency-container {
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+.input-group input {
+    border: 1px solid #b0b0b0;
+    border-radius: 6px;
+}
+
+.btn-guardar {
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(33, 150, 243, 0.3);
+}
+
+.btn-guardar:active {
+    transform: scale(0.99);
+}
+/*vuelos*/
+.flight-card {
+    border: 1px solid #dcdcdc;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+.btn-volver {
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(33, 150, 243, 0.3);
+}
+
+.btn-volver:active {
+    transform: scale(0.99);
+}
+/*mis vuelos*/
+
+.flight-card {
+    border: 1px solid #dcdcdc;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+.btn-volver {
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(33, 150, 243, 0.3);
+}
+
+.btn-volver:active {
+    transform: scale(0.99);
+}
